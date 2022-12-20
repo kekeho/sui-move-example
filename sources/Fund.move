@@ -47,7 +47,7 @@ module fund::project {
         transfer::transfer(collectedCoin, owner(p));
     }
 
-    public fun owner(p: &Project): address {
+    fun owner(p: &Project): address {
         return p.owner
     }
 
